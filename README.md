@@ -1,4 +1,4 @@
-# VK Technopark-BMSTU | SEM II_ML OPS | HW_1
+## VK Technopark-BMSTU | SEM II | ML OPS
 
 ================================================================ 
   
@@ -6,7 +6,7 @@
 Группа ML-21.  
 Преподаватели: Михаил Марюфич  
 
-### Homeworks:
+#### Homeworks:
 - HW_1:
 - HW_2:
 - HW_3:
