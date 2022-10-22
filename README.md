@@ -1,5 +1,6 @@
 # ML OPS 2022 Course
-Student: A. Ustsov, Group: ML-21.  
+Student: A. Ustsov.  
+Group: ML-21.  
 Project: Technopark BMSTU.  
 Lecturer: M. Maryfich.  
 
