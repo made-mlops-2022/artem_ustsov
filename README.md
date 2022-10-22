@@ -1,8 +1,10 @@
-# ML OPS 2022 Course
-Student: A. Ustsov.  
-Group: ML-21.  
-Project: Technopark BMSTU.  
-Lecturer: M. Maryfich.  
+# VK Technopark-BMSTU | SEM II_ML OPS | HW_1
+
+================================================================ 
+  
+Усцов Артем Алексеевич.  
+Группа ML-21.  
+Преподаватели: Михаил Марюфич  
 
 ### Homeworks:
 - HW_1:
