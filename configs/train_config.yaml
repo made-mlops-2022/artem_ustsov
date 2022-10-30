@@ -1,0 +1,44 @@
+# Copyright 2022 by Artem Ustsov
+
+input_data_path: "data/raw/heart_cleveland_upload.csv"
+output_model_path: "models/LogisticRegressionCV_model.pkl"
+output_proccessed_data_path: "data/processed/train.csv"
+make_report: False
+use_mlflow: False
+mlflow_uri: "postgresql://ml_project_user:g51HN042rn6S6G{T@5.188.140.81/PostgreSQL-3482"
+mlflow_experiment: "ml_project"
+mlflow_artifact_location: "s3://ml_project/artifacts/"
+output_report_path: "reports/EDA.html"
+metric_path: "models/LogisticRegressionCV_metrics.json"
+downloading_params:
+  s3_bucket: ml_project
+  paths:
+    - dataset/heart_cleveland_upload.csv
+  output_folder: "data/raw/"
+splitting_params:
+  val_size: 0.2
+  random_state: 42
+train_params:
+  model_type: "LogisticRegressionCV"
+  penalty: "l2"
+  max_iter: 10000
+  tol: 0.001
+feature_params:
+  categorical_features:
+    - "sex"
+    - "chest_pain_type"
+    - "fasting_blood_sugar"
+    - "rest_ecg"
+    - "exercise_induced_angina"
+    - "st_slope"
+    - "thalassemia"
+  numerical_features:
+    - "age"
+    - "resting_blood_pressure"
+    - "cholesterol"
+    - "max_heart_rate_achieved"
+    - "st_depression"
+    - "num_major_vessels"
+#  features_to_drop:
+#    - "age"
+  target_col: "condition"
