@@ -23,10 +23,21 @@ import mlflow
 
 from ml_project.models.fit_model import create_inference_pipeline
 
+
+if not os.path.isdir("logs"):
+    os.mkdir("logs")
+
+FORMAT_LOG = "%(asctime)s: %(message)s"
+file_log = logging.FileHandler("logs/train_pipeline.log")
+console_out = logging.StreamHandler(sys.stdout)
+
+logging.basicConfig(
+    handlers=(file_log, console_out),
+    format=FORMAT_LOG,
+    level=logging.INFO,
+    datefmt="%H:%M:%S",
+)
 logger = logging.getLogger(__name__)
-handler = logging.StreamHandler(sys.stdout)
-logger.setLevel(logging.INFO)
-logger.addHandler(handler)
 
 
 def train_pipeline(config_path: str):

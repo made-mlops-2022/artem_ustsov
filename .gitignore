@@ -93,4 +93,5 @@ target/
 
 # Mypy cache
 .mypy_cache/
->>>>>>> 3af9f08 (complete model. s3 on. rebuild architecture. reports on. logging on)
+
+logs/
