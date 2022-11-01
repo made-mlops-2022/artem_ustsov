@@ -7,26 +7,21 @@ import sys
 from pathlib import Path
 
 import click
-import pandas as pd
 
-from ml_project.data import read_data, split_train_val_data
+from ml_project.data import read_data, write_data, split_train_val_data
 from ml_project.data.load_data import download_data_from_s3
 from ml_project.data.make_eda import make_eda_report
-from ml_project.entities.train_pipeline_params import (
-    TrainingPipelineParams,
-    read_training_pipeline_params,
-)
+from ml_project.entities.train_pipeline_params import read_training_pipeline_params
 from ml_project.features import make_features
 from ml_project.features.build_features import extract_target, build_transformer, process_raw_data
-from ml_project.models import (
-    train_model,
-    serialize_model,
-    predict_model,
-    evaluate_model,
-)
+from ml_project.models.process_model import serialize_model
+from ml_project.models.fit_model import train_model
+from ml_project.models.predict_model import predict_model
+from ml_project.models.evaluate_model import evaluate_model
+
 import mlflow
 
-from ml_project.models.model_fit_predict import create_inference_pipeline
+from ml_project.models.fit_model import create_inference_pipeline
 
 logger = logging.getLogger(__name__)
 handler = logging.StreamHandler(sys.stdout)
@@ -69,9 +64,11 @@ def run_train_pipeline(training_pipeline_params):
             )
 
     logger.info(f"Start train pipeline with params {training_pipeline_params}")
-    raw_data = read_data(training_pipeline_params.input_data_path)
-    logger.info(f"data.shape is {raw_data.shape}")
-    data = process_raw_data(raw_data)
+    data = read_data(training_pipeline_params.input_data_path)
+    logger.info(f"data.shape is {data.shape}")
+
+    readable_data = process_raw_data(data, training_pipeline_params.feature_params)
+    readable_data.to_csv(training_pipeline_params.output_clean_data_path, index_label=False)
 
     train_df, val_df = split_train_val_data(
         data, training_pipeline_params.splitting_params
@@ -86,13 +83,21 @@ def run_train_pipeline(training_pipeline_params):
     logger.info(f"train_df.shape is {train_df.shape}")
     logger.info(f"val_df.shape is {val_df.shape}")
 
+
     transformer = build_transformer(training_pipeline_params.feature_params)
     transformer.fit(train_df)
 
     train_features = make_features(transformer, train_df)
+    logger.info(f"write train data")
+    write_data(
+        training_pipeline_params.output_proccessed_data_path,
+        train_features,
+    )
+
     logger.info(f"train_features.shape is {train_features.shape}")
     model = train_model(
-        train_features, train_target, training_pipeline_params.train_params
+        train_features, train_target,
+        training_pipeline_params.train_params,
     )
 
     inference_pipeline = create_inference_pipeline(model, transformer)

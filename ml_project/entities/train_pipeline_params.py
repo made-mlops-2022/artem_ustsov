@@ -16,6 +16,7 @@ import yaml
 class TrainingPipelineParams:
     input_data_path: str
     output_proccessed_data_path: str
+    output_clean_data_path: str
     output_model_path: str
     output_report_path: str
     metric_path: str

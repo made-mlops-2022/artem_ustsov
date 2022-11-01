@@ -1,6 +1,6 @@
 """Copyright 2022 by Artem Ustsov"""
 
-from typing import Tuple, NoReturn
+from typing import Any, NoReturn, Tuple
 
 import pandas as pd
 import boto3
@@ -29,6 +29,11 @@ def read_data(path: str) -> pd.DataFrame:
     print(path)
     data = pd.read_csv(path)
     return data
+
+
+def write_data(path: str, data: Any) -> NoReturn:
+    print(path)
+    pd.DataFrame(data).to_csv(path, index=False)
 
 
 def split_train_val_data(

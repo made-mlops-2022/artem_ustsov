@@ -2,6 +2,7 @@
 
 input_data_path: "data/raw/heart_cleveland_upload.csv"
 output_model_path: "models/LogisticRegressionCV_model.pkl"
+output_clean_data_path: "data/processed/heart_cleveland_upload_processed.csv"
 output_proccessed_data_path: "data/processed/train.csv"
 make_report: False
 use_mlflow: False
@@ -20,6 +21,8 @@ splitting_params:
   random_state: 42
 train_params:
   model_type: "LogisticRegressionCV"
+  cross_val_strategy: "StratifiedKFold"
+  n_split: 20
   penalty: "l2"
   max_iter: 10000
   tol: 0.001
@@ -39,6 +42,4 @@ feature_params:
     - "max_heart_rate_achieved"
     - "st_depression"
     - "num_major_vessels"
-#  features_to_drop:
-#    - "age"
   target_col: "condition"
