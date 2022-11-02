@@ -4,6 +4,7 @@ import logging
 from typing import List, NoReturn
 import numpy as np
 import pandas as pd
+
 pd.options.mode.chained_assignment = None
 from sklearn.base import BaseEstimator, TransformerMixin
 from sklearn.compose import ColumnTransformer
@@ -22,7 +23,9 @@ class FeatureSelector(BaseEstimator, TransformerMixin):
     def fit(self, x_data: pd.DataFrame, y: pd.Series = None) -> object:
         return self
 
-    def transform(self, x_data: pd.DataFrame, y: pd.Series = None) -> pd.DataFrame:
+    def transform(
+        self, x_data: pd.DataFrame, y: pd.Series = None
+    ) -> pd.DataFrame:
         return x_data[self._feature_names]
 
 
@@ -30,13 +33,24 @@ class DataframeTransformer(BaseEstimator, TransformerMixin):
     def fit(self, x_data: pd.DataFrame, y: pd.Series = None) -> object:
         return self
 
-    def transform(self, x_data: pd.DataFrame, y: pd.Series = None) -> pd.DataFrame:
-        # _x_data = x_data.copy()
+    def transform(
+        self, x_data: pd.DataFrame, y: pd.Series = None
+    ) -> pd.DataFrame:
         x_data.columns = [
-            'age', 'sex', 'chest_pain_type', 'resting_blood_pressure', 'cholesterol',
-            'fasting_blood_sugar', 'rest_ecg', 'max_heart_rate_achieved',
-            'exercise_induced_angina', 'st_depression', 'st_slope', 'num_major_vessels',
-            'thalassemia', 'condition',
+            "age",
+            "sex",
+            "chest_pain_type",
+            "resting_blood_pressure",
+            "cholesterol",
+            "fasting_blood_sugar",
+            "rest_ecg",
+            "max_heart_rate_achieved",
+            "exercise_induced_angina",
+            "st_depression",
+            "st_slope",
+            "num_major_vessels",
+            "thalassemia",
+            "condition",
         ]
 
         return x_data
@@ -49,12 +63,16 @@ class TargetTransformer(BaseEstimator, TransformerMixin):
     @staticmethod
     def process_condition(obj) -> NoReturn:
         if obj == 0:
-            return 'no disease'
+            return "no disease"
         if obj == 1:
-            return 'disease'
+            return "disease"
 
-    def transform(self, x_data: pd.DataFrame, y: pd.Series = None) -> pd.DataFrame:
-        x_data.loc[:, x_data.columns[0]] = x_data[x_data.columns[0]].apply(self.process_condition)
+    def transform(
+        self, x_data: pd.DataFrame, y: pd.Series = None
+    ) -> pd.DataFrame:
+        x_data.loc[:, x_data.columns[0]] = x_data[x_data.columns[0]].apply(
+            self.process_condition
+        )
         return x_data
 
 
@@ -62,68 +80,72 @@ class CategoricalTransformer(BaseEstimator, TransformerMixin):
     @staticmethod
     def process_sex(obj):
         if obj == 0:
-            return 'female'
+            return "female"
         if obj == 1:
-            return 'male'
+            return "male"
 
     @staticmethod
     def process_chest_pain_type(obj) -> NoReturn:
         if obj == 0:
-            return 'typical_angina'
+            return "typical_angina"
         if obj == 1:
-            return 'atypical_angina'
+            return "atypical_angina"
         if obj == 2:
-            return 'non_anginal_pain'
+            return "non_anginal_pain"
         if obj == 3:
-            return 'asymptomatic'
+            return "asymptomatic"
 
     @staticmethod
     def process_rest_ecg(obj) -> NoReturn:
         if obj == 0:
-            return 'normal'
+            return "normal"
         if obj == 1:
-            return 'ST-T_wave_abnormality'
+            return "ST-T_wave_abnormality"
         if obj == 2:
-            return 'left_ventricular_hypertrophy'
+            return "left_ventricular_hypertrophy"
 
     @staticmethod
     def process_fasting_blood_sugar(obj) -> NoReturn:
         if obj == 0:
-            return 'less_than_120mg/ml'
+            return "less_than_120mg/ml"
         if obj == 1:
-            return 'greater_than_120mg/ml'
+            return "greater_than_120mg/ml"
 
     @staticmethod
     def process_exercise_induced_angina(obj) -> NoReturn:
         if obj == 0:
-            return 'no'
+            return "no"
         if obj == 1:
-            return 'yes'
+            return "yes"
 
     @staticmethod
     def process_st_slope(obj) -> NoReturn:
         if obj == 0:
-            return 'upsloping'
+            return "upsloping"
         if obj == 1:
-            return 'flat'
+            return "flat"
         if obj == 2:
-            return 'downsloping'
+            return "downsloping"
 
     @staticmethod
     def process_thalassemia(obj) -> NoReturn:
         if obj == 0:
-            return 'fixed_defect'
+            return "fixed_defect"
         if obj == 1:
-            return 'normal'
+            return "normal"
         if obj == 2:
-            return 'reversable_defect'
+            return "reversable_defect"
 
     def fit(self, x_data: pd.DataFrame, y: pd.Series = None) -> object:
         return self
 
-    def transform(self, x_data: pd.DataFrame, y: pd.Series = None) -> pd.DataFrame:
+    def transform(
+        self, x_data: pd.DataFrame, y: pd.Series = None
+    ) -> pd.DataFrame:
         for cat_feature in x_data.columns:
-            exec(f"x_data.loc[:, '{cat_feature}'] = x_data['{cat_feature}'].apply(self.process_{cat_feature})")
+            exec(
+                f"x_data.loc[:, '{cat_feature}'] = x_data['{cat_feature}'].apply(self.process_{cat_feature})"
+            )
         return x_data
 
 
@@ -131,7 +153,9 @@ class NumericalTransformer(BaseEstimator, TransformerMixin):
     def fit(self, x_data: pd.DataFrame, y: pd.Series = None) -> object:
         return self
 
-    def transform(self, x_data: pd.DataFrame, y: pd.Series = None) -> pd.DataFrame:
+    def transform(
+        self, x_data: pd.DataFrame, y: pd.Series = None
+    ) -> pd.DataFrame:
         x_data = x_data.replace([np.inf, -np.inf], np.nan)
         return x_data
 
@@ -146,25 +170,41 @@ def build_rename_raw_data_columns_pipeline() -> Pipeline:
 
 
 def build_features_values_rename_pipeline(params: FeatureParams) -> Pipeline:
-    categorical_pipeline = Pipeline(steps=[('cat_selector', FeatureSelector(params.categorical_features)),
-                                           ('cat_transformer', CategoricalTransformer()),
-                                           ])
+    categorical_pipeline = Pipeline(
+        steps=[
+            ("cat_selector", FeatureSelector(params.categorical_features)),
+            ("cat_transformer", CategoricalTransformer()),
+        ]
+    )
 
-    numerical_pipeline = Pipeline(steps=[('num_selector', FeatureSelector(params.numerical_features)),
-                                         ('num_transformer', NumericalTransformer()),
-                                         ])
+    numerical_pipeline = Pipeline(
+        steps=[
+            ("num_selector", FeatureSelector(params.numerical_features)),
+            ("num_transformer", NumericalTransformer()),
+        ]
+    )
 
-    target_pipeline = Pipeline(steps=[('target_selector', FeatureSelector([params.target_col])),
-                                      ('target_transformer', TargetTransformer()),
-                                      ])
+    target_pipeline = Pipeline(
+        steps=[
+            ("target_selector", FeatureSelector([params.target_col])),
+            ("target_transformer", TargetTransformer()),
+        ]
+    )
 
-    full_pipeline = Pipeline([
-        ('full_pipline', FeatureUnion([
-            ('categorical_pipeline', categorical_pipeline),
-            ('numerical_pipeline', numerical_pipeline),
-            ('target_pipeline', target_pipeline),
-        ]),
-         )])
+    full_pipeline = Pipeline(
+        [
+            (
+                "full_pipline",
+                FeatureUnion(
+                    [
+                        ("categorical_pipeline", categorical_pipeline),
+                        ("numerical_pipeline", numerical_pipeline),
+                        ("target_pipeline", target_pipeline),
+                    ]
+                ),
+            )
+        ]
+    )
 
     return full_pipeline
 
@@ -172,23 +212,37 @@ def build_features_values_rename_pipeline(params: FeatureParams) -> Pipeline:
 def build_raw_data_pipeline(params: FeatureParams) -> Pipeline:
     raw_headers_pipeline = Pipeline(
         steps=[
-            ("raw_data_columns_rename", build_rename_raw_data_columns_pipeline()),
-            ("feature_rename", build_features_values_rename_pipeline(params))
+            (
+                "raw_data_columns_rename",
+                build_rename_raw_data_columns_pipeline(),
+            ),
+            ("feature_rename", build_features_values_rename_pipeline(params)),
         ]
     )
     return raw_headers_pipeline
 
 
-def process_raw_data(raw_data_df: pd.DataFrame, params: FeatureParams) -> pd.DataFrame:
+def process_raw_data(
+    raw_data_df: pd.DataFrame, params: FeatureParams
+) -> pd.DataFrame:
     raw_data_pipeline = build_raw_data_pipeline(params)
-    return pd.DataFrame(raw_data_pipeline.fit_transform(raw_data_df),
-                        columns=params.categorical_features + params.numerical_features + [params.target_col])
+    return pd.DataFrame(
+        raw_data_pipeline.fit_transform(raw_data_df),
+        columns=params.categorical_features
+        + params.numerical_features
+        + [params.target_col],
+    )
 
 
 def build_categorical_pipeline() -> Pipeline:
     categorical_pipeline = Pipeline(
         steps=[
-            ("impute", SimpleImputer(missing_values=np.nan, strategy="most_frequent")),
+            (
+                "impute",
+                SimpleImputer(
+                    missing_values=np.nan, strategy="most_frequent"
+                ),
+            ),
             ("one_hot_encoder", OneHotEncoder(sparse=False)),
         ]
     )
@@ -205,9 +259,11 @@ def build_numerical_pipeline() -> Pipeline:
     return numerical_pipeline
 
 
-def make_features(transformer: ColumnTransformer, df: pd.DataFrame) -> pd.DataFrame:
+def make_features(
+    transformer: ColumnTransformer, df: pd.DataFrame
+) -> pd.DataFrame:
     logger = logging.getLogger(__name__)
-    logger.info('Making features')
+    logger.info("Making features")
     return transformer.transform(df)
 
 

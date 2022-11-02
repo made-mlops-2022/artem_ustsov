@@ -2,11 +2,11 @@
 
 import pandas as pd
 import numpy as np
-from sklearn.pipeline import Pipeline
+from typing import Any
 
 
 def predict_model(
-    model: Pipeline,
+    model: Any,
     features: pd.DataFrame,
 ) -> np.ndarray:
     predicts = model.predict(features)

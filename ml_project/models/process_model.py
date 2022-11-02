@@ -9,6 +9,6 @@ def serialize_model(model: object, output_obj: str) -> str:
 
 
 def deserialize_model(input_obj: str) -> object:
-    with open(input_obj, 'rb') as f:
+    with open(input_obj, "rb") as f:
         model = pickle.load(f)
     return model

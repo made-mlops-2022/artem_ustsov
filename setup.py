@@ -15,7 +15,11 @@ setup(
     author="Artem Ustsov (Technopark, ML-21)",
     entry_points={
         "console_scripts": [
-            "ml_project_train = ml_project.train_pipeline:train_pipeline_command"
+            "ml_project_download_data_from_s3 = "
+            "ml_project.ml_project_download_data_from_s3:download_data_from_s3_command",
+            "ml_project_make_eda = ml_project.make_eda:make_eda_command",
+            "ml_project_fit = ml_project.fit_predict_pipeline:fit_pipeline_command",
+            "ml_project_predict = ml_project.fit_predict_pipeline:predict_pipeline_command",
         ]
     },
     install_requires=required,

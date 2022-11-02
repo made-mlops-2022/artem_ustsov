@@ -2,8 +2,9 @@
 
 import pandas as pd
 from sklearn.linear_model import LogisticRegressionCV
-from sklearn.pipeline import Pipeline, FeatureUnion
+from sklearn.pipeline import Pipeline
 import sklearn.model_selection as selection
+from sklearn.compose import ColumnTransformer
 
 from ml_project.entities.train_params import TrainingParams
 
@@ -30,6 +31,6 @@ def train_model(
 
 
 def create_inference_pipeline(
-    model: SklearnClassifierModel, transformer: FeatureUnion
+    model: SklearnClassifierModel, transformer: ColumnTransformer
 ) -> Pipeline:
     return Pipeline([("feature_part", transformer), ("model_part", model)])
