@@ -1,0 +1,298 @@
+sex,chest_pain_type,fasting_blood_sugar,rest_ecg,exercise_induced_angina,st_slope,thalassemia,age,resting_blood_pressure,cholesterol,max_heart_rate_achieved,st_depression,num_major_vessels,condition
+0,male,typical_angina,greater_than_120mg/ml,left_ventricular_hypertrophy,no,flat,fixed_defect,69.0,160.0,234.0,131.0,0.1,1.0,no disease
+1,female,typical_angina,less_than_120mg/ml,normal,no,upsloping,fixed_defect,69.0,140.0,239.0,151.0,1.8,2.0,no disease
+2,female,typical_angina,less_than_120mg/ml,normal,no,downsloping,fixed_defect,66.0,150.0,226.0,114.0,2.6,0.0,no disease
+3,male,typical_angina,greater_than_120mg/ml,left_ventricular_hypertrophy,no,flat,fixed_defect,65.0,138.0,282.0,174.0,1.4,1.0,disease
+4,male,typical_angina,less_than_120mg/ml,left_ventricular_hypertrophy,yes,flat,fixed_defect,64.0,110.0,211.0,144.0,1.8,0.0,no disease
+5,male,typical_angina,less_than_120mg/ml,left_ventricular_hypertrophy,no,flat,reversable_defect,64.0,170.0,227.0,155.0,0.6,0.0,no disease
+6,male,typical_angina,greater_than_120mg/ml,left_ventricular_hypertrophy,no,downsloping,normal,63.0,145.0,233.0,150.0,2.3,0.0,no disease
+7,male,typical_angina,less_than_120mg/ml,normal,no,flat,fixed_defect,61.0,134.0,234.0,145.0,2.6,2.0,disease
+8,female,typical_angina,less_than_120mg/ml,normal,no,upsloping,fixed_defect,60.0,150.0,240.0,171.0,0.9,0.0,no disease
+9,male,typical_angina,less_than_120mg/ml,left_ventricular_hypertrophy,no,downsloping,reversable_defect,59.0,178.0,270.0,145.0,4.2,0.0,no disease
+10,male,typical_angina,less_than_120mg/ml,left_ventricular_hypertrophy,no,flat,reversable_defect,59.0,170.0,288.0,159.0,0.2,0.0,disease
+11,male,typical_angina,less_than_120mg/ml,left_ventricular_hypertrophy,no,upsloping,fixed_defect,59.0,160.0,273.0,125.0,0.0,0.0,disease
+12,male,typical_angina,less_than_120mg/ml,normal,no,upsloping,fixed_defect,59.0,134.0,204.0,162.0,0.8,2.0,disease
+13,female,typical_angina,greater_than_120mg/ml,left_ventricular_hypertrophy,no,upsloping,fixed_defect,58.0,150.0,283.0,162.0,1.0,0.0,no disease
+14,male,typical_angina,less_than_120mg/ml,left_ventricular_hypertrophy,no,flat,reversable_defect,56.0,120.0,193.0,162.0,1.9,0.0,no disease
+15,male,typical_angina,less_than_120mg/ml,left_ventricular_hypertrophy,no,flat,normal,52.0,118.0,186.0,190.0,0.0,0.0,no disease
+16,male,typical_angina,greater_than_120mg/ml,normal,no,flat,reversable_defect,52.0,152.0,298.0,178.0,1.2,0.0,no disease
+17,male,typical_angina,less_than_120mg/ml,left_ventricular_hypertrophy,yes,upsloping,fixed_defect,51.0,125.0,213.0,125.0,1.4,1.0,no disease
+18,male,typical_angina,less_than_120mg/ml,normal,no,flat,reversable_defect,45.0,110.0,264.0,132.0,1.2,0.0,disease
+19,male,typical_angina,less_than_120mg/ml,left_ventricular_hypertrophy,no,upsloping,fixed_defect,42.0,148.0,244.0,178.0,0.8,2.0,no disease
+20,male,typical_angina,less_than_120mg/ml,normal,yes,upsloping,reversable_defect,40.0,140.0,199.0,178.0,1.4,0.0,no disease
+21,male,typical_angina,less_than_120mg/ml,normal,yes,flat,reversable_defect,38.0,120.0,231.0,182.0,3.8,0.0,disease
+22,male,typical_angina,less_than_120mg/ml,left_ventricular_hypertrophy,no,upsloping,fixed_defect,34.0,118.0,182.0,174.0,0.0,0.0,no disease
+23,female,atypical_angina,less_than_120mg/ml,left_ventricular_hypertrophy,yes,upsloping,fixed_defect,74.0,120.0,269.0,121.0,0.2,1.0,no disease
+24,female,atypical_angina,less_than_120mg/ml,normal,no,upsloping,fixed_defect,71.0,160.0,302.0,162.0,0.4,2.0,no disease
+25,male,atypical_angina,less_than_120mg/ml,left_ventricular_hypertrophy,no,upsloping,fixed_defect,70.0,156.0,245.0,143.0,0.0,0.0,no disease
+26,male,atypical_angina,less_than_120mg/ml,normal,yes,flat,normal,66.0,160.0,246.0,120.0,0.0,3.0,disease
+27,female,atypical_angina,less_than_120mg/ml,normal,no,upsloping,fixed_defect,63.0,140.0,195.0,179.0,0.0,2.0,no disease
+28,male,atypical_angina,less_than_120mg/ml,left_ventricular_hypertrophy,no,flat,reversable_defect,62.0,120.0,281.0,103.0,1.4,1.0,disease
+29,male,atypical_angina,greater_than_120mg/ml,left_ventricular_hypertrophy,no,upsloping,fixed_defect,62.0,128.0,208.0,140.0,0.0,0.0,no disease
+30,male,atypical_angina,less_than_120mg/ml,normal,yes,upsloping,fixed_defect,59.0,140.0,221.0,164.0,0.0,0.0,no disease
+31,male,atypical_angina,less_than_120mg/ml,left_ventricular_hypertrophy,no,flat,fixed_defect,58.0,120.0,284.0,160.0,1.8,0.0,disease
+32,female,atypical_angina,greater_than_120mg/ml,left_ventricular_hypertrophy,no,upsloping,fixed_defect,58.0,136.0,319.0,152.0,0.0,2.0,disease
+33,female,atypical_angina,less_than_120mg/ml,left_ventricular_hypertrophy,no,flat,fixed_defect,57.0,130.0,236.0,174.0,0.0,1.0,disease
+34,male,atypical_angina,less_than_120mg/ml,normal,no,upsloping,reversable_defect,57.0,124.0,261.0,141.0,0.3,0.0,disease
+35,male,atypical_angina,less_than_120mg/ml,left_ventricular_hypertrophy,no,upsloping,fixed_defect,57.0,154.0,232.0,164.0,0.0,1.0,disease
+36,male,atypical_angina,less_than_120mg/ml,normal,no,downsloping,fixed_defect,56.0,120.0,240.0,169.0,0.0,0.0,no disease
+37,female,atypical_angina,less_than_120mg/ml,left_ventricular_hypertrophy,no,flat,fixed_defect,56.0,140.0,294.0,153.0,1.3,0.0,no disease
+38,male,atypical_angina,less_than_120mg/ml,normal,no,upsloping,fixed_defect,56.0,120.0,236.0,178.0,0.8,0.0,no disease
+39,male,atypical_angina,less_than_120mg/ml,left_ventricular_hypertrophy,no,upsloping,reversable_defect,56.0,130.0,221.0,163.0,0.0,0.0,no disease
+40,female,atypical_angina,less_than_120mg/ml,left_ventricular_hypertrophy,no,flat,fixed_defect,55.0,135.0,250.0,161.0,1.4,0.0,no disease
+41,male,atypical_angina,less_than_120mg/ml,normal,no,upsloping,fixed_defect,55.0,130.0,262.0,155.0,0.0,0.0,no disease
+42,female,atypical_angina,less_than_120mg/ml,normal,no,upsloping,fixed_defect,55.0,132.0,342.0,166.0,1.2,0.0,no disease
+43,male,atypical_angina,less_than_120mg/ml,normal,no,upsloping,reversable_defect,54.0,108.0,309.0,156.0,0.0,0.0,no disease
+44,female,atypical_angina,greater_than_120mg/ml,left_ventricular_hypertrophy,yes,upsloping,fixed_defect,54.0,132.0,288.0,159.0,0.0,1.0,no disease
+45,male,atypical_angina,less_than_120mg/ml,left_ventricular_hypertrophy,no,upsloping,reversable_defect,54.0,192.0,283.0,195.0,0.0,1.0,disease
+46,male,atypical_angina,less_than_120mg/ml,normal,no,upsloping,fixed_defect,52.0,120.0,325.0,172.0,0.2,0.0,no disease
+47,male,atypical_angina,less_than_120mg/ml,normal,no,upsloping,fixed_defect,52.0,134.0,201.0,158.0,0.8,1.0,no disease
+48,male,atypical_angina,greater_than_120mg/ml,normal,no,upsloping,fixed_defect,52.0,128.0,205.0,184.0,0.0,0.0,no disease
+49,female,atypical_angina,less_than_120mg/ml,normal,no,upsloping,fixed_defect,50.0,120.0,244.0,162.0,1.1,0.0,no disease
+50,female,atypical_angina,less_than_120mg/ml,normal,no,flat,fixed_defect,49.0,134.0,271.0,162.0,0.0,0.0,no disease
+51,male,atypical_angina,less_than_120mg/ml,normal,no,upsloping,fixed_defect,49.0,130.0,266.0,171.0,0.6,0.0,no disease
+52,male,atypical_angina,less_than_120mg/ml,normal,no,downsloping,reversable_defect,48.0,110.0,229.0,168.0,1.0,0.0,disease
+53,male,atypical_angina,less_than_120mg/ml,left_ventricular_hypertrophy,no,flat,fixed_defect,48.0,130.0,245.0,180.0,0.2,0.0,no disease
+54,male,atypical_angina,greater_than_120mg/ml,normal,no,upsloping,reversable_defect,46.0,101.0,197.0,156.0,0.0,0.0,no disease
+55,female,atypical_angina,less_than_120mg/ml,normal,no,upsloping,fixed_defect,46.0,105.0,204.0,172.0,0.0,0.0,no disease
+56,female,atypical_angina,less_than_120mg/ml,left_ventricular_hypertrophy,no,flat,fixed_defect,45.0,130.0,234.0,175.0,0.6,0.0,no disease
+57,female,atypical_angina,less_than_120mg/ml,normal,no,flat,fixed_defect,45.0,112.0,160.0,138.0,0.0,0.0,no disease
+58,male,atypical_angina,less_than_120mg/ml,left_ventricular_hypertrophy,no,upsloping,fixed_defect,45.0,128.0,308.0,170.0,0.0,0.0,no disease
+59,male,atypical_angina,less_than_120mg/ml,normal,no,upsloping,reversable_defect,44.0,120.0,263.0,173.0,0.0,0.0,no disease
+60,male,atypical_angina,less_than_120mg/ml,left_ventricular_hypertrophy,no,upsloping,fixed_defect,44.0,130.0,219.0,188.0,0.0,0.0,no disease
+61,male,atypical_angina,less_than_120mg/ml,normal,no,upsloping,fixed_defect,44.0,120.0,220.0,170.0,0.0,0.0,no disease
+62,male,atypical_angina,less_than_120mg/ml,normal,no,upsloping,fixed_defect,42.0,120.0,295.0,162.0,0.0,0.0,no disease
+63,male,atypical_angina,less_than_120mg/ml,normal,no,flat,normal,41.0,135.0,203.0,132.0,0.0,0.0,no disease
+64,female,atypical_angina,less_than_120mg/ml,left_ventricular_hypertrophy,no,upsloping,fixed_defect,41.0,130.0,204.0,172.0,1.4,0.0,no disease
+65,female,atypical_angina,less_than_120mg/ml,normal,no,upsloping,fixed_defect,41.0,105.0,198.0,168.0,0.0,1.0,no disease
+66,male,atypical_angina,less_than_120mg/ml,normal,no,upsloping,fixed_defect,41.0,110.0,235.0,153.0,0.0,0.0,no disease
+67,female,atypical_angina,less_than_120mg/ml,normal,no,upsloping,fixed_defect,41.0,126.0,306.0,163.0,0.0,0.0,no disease
+68,male,atypical_angina,less_than_120mg/ml,normal,no,upsloping,fixed_defect,41.0,120.0,157.0,182.0,0.0,0.0,no disease
+69,male,atypical_angina,less_than_120mg/ml,normal,no,upsloping,fixed_defect,35.0,122.0,192.0,174.0,0.0,0.0,no disease
+70,female,atypical_angina,less_than_120mg/ml,normal,no,upsloping,fixed_defect,34.0,118.0,210.0,192.0,0.7,0.0,no disease
+71,male,atypical_angina,less_than_120mg/ml,left_ventricular_hypertrophy,no,upsloping,fixed_defect,29.0,130.0,204.0,202.0,0.0,0.0,no disease
+72,female,non_anginal_pain,less_than_120mg/ml,ST-T_wave_abnormality,no,flat,fixed_defect,76.0,140.0,197.0,116.0,1.1,0.0,no disease
+73,female,non_anginal_pain,greater_than_120mg/ml,left_ventricular_hypertrophy,no,upsloping,fixed_defect,71.0,110.0,265.0,130.0,0.0,1.0,no disease
+74,male,non_anginal_pain,less_than_120mg/ml,normal,yes,flat,reversable_defect,70.0,160.0,269.0,112.0,2.9,1.0,disease
+75,male,non_anginal_pain,less_than_120mg/ml,left_ventricular_hypertrophy,no,flat,reversable_defect,69.0,140.0,254.0,146.0,2.0,3.0,disease
+76,male,non_anginal_pain,greater_than_120mg/ml,left_ventricular_hypertrophy,yes,flat,reversable_defect,68.0,180.0,274.0,150.0,1.6,0.0,disease
+77,female,non_anginal_pain,less_than_120mg/ml,left_ventricular_hypertrophy,no,flat,fixed_defect,68.0,120.0,211.0,115.0,1.5,0.0,no disease
+78,male,non_anginal_pain,less_than_120mg/ml,normal,no,upsloping,reversable_defect,68.0,118.0,277.0,151.0,1.0,1.0,no disease
+79,female,non_anginal_pain,less_than_120mg/ml,left_ventricular_hypertrophy,no,flat,reversable_defect,67.0,115.0,564.0,160.0,1.6,0.0,no disease
+80,male,non_anginal_pain,less_than_120mg/ml,left_ventricular_hypertrophy,no,flat,reversable_defect,67.0,152.0,212.0,150.0,0.8,0.0,disease
+81,female,non_anginal_pain,less_than_120mg/ml,normal,no,upsloping,fixed_defect,67.0,152.0,277.0,172.0,0.0,1.0,no disease
+82,female,non_anginal_pain,less_than_120mg/ml,left_ventricular_hypertrophy,no,flat,fixed_defect,66.0,146.0,278.0,152.0,0.0,1.0,no disease
+83,female,non_anginal_pain,greater_than_120mg/ml,left_ventricular_hypertrophy,no,upsloping,fixed_defect,65.0,140.0,417.0,157.0,0.8,1.0,no disease
+84,female,non_anginal_pain,less_than_120mg/ml,normal,no,upsloping,fixed_defect,65.0,155.0,269.0,148.0,0.8,0.0,no disease
+85,female,non_anginal_pain,less_than_120mg/ml,left_ventricular_hypertrophy,no,upsloping,fixed_defect,65.0,160.0,360.0,151.0,0.8,0.0,no disease
+86,male,non_anginal_pain,less_than_120mg/ml,normal,yes,flat,reversable_defect,64.0,125.0,309.0,131.0,1.8,0.0,disease
+87,male,non_anginal_pain,less_than_120mg/ml,normal,no,upsloping,fixed_defect,64.0,140.0,335.0,158.0,0.0,0.0,disease
+88,female,non_anginal_pain,less_than_120mg/ml,normal,no,upsloping,reversable_defect,64.0,140.0,313.0,133.0,0.2,0.0,no disease
+89,female,non_anginal_pain,less_than_120mg/ml,left_ventricular_hypertrophy,no,upsloping,fixed_defect,63.0,135.0,252.0,172.0,0.0,0.0,no disease
+90,male,non_anginal_pain,less_than_120mg/ml,normal,no,flat,reversable_defect,62.0,130.0,231.0,146.0,1.8,3.0,no disease
+91,female,non_anginal_pain,less_than_120mg/ml,normal,no,flat,reversable_defect,62.0,130.0,263.0,97.0,1.2,1.0,disease
+92,male,non_anginal_pain,greater_than_120mg/ml,normal,yes,flat,fixed_defect,61.0,150.0,243.0,137.0,1.0,0.0,no disease
+93,male,non_anginal_pain,less_than_120mg/ml,left_ventricular_hypertrophy,no,flat,fixed_defect,60.0,140.0,185.0,155.0,3.0,0.0,disease
+94,female,non_anginal_pain,less_than_120mg/ml,normal,no,upsloping,fixed_defect,60.0,102.0,318.0,160.0,0.0,1.0,no disease
+95,female,non_anginal_pain,greater_than_120mg/ml,normal,no,upsloping,fixed_defect,60.0,120.0,178.0,96.0,0.0,0.0,no disease
+96,male,non_anginal_pain,greater_than_120mg/ml,normal,no,flat,normal,59.0,126.0,218.0,134.0,2.2,1.0,disease
+97,male,non_anginal_pain,greater_than_120mg/ml,normal,no,upsloping,fixed_defect,59.0,150.0,212.0,157.0,1.6,0.0,no disease
+98,male,non_anginal_pain,less_than_120mg/ml,left_ventricular_hypertrophy,no,flat,reversable_defect,58.0,112.0,230.0,165.0,2.5,1.0,disease
+99,male,non_anginal_pain,less_than_120mg/ml,left_ventricular_hypertrophy,yes,flat,reversable_defect,58.0,105.0,240.0,154.0,0.6,0.0,no disease
+100,male,non_anginal_pain,less_than_120mg/ml,left_ventricular_hypertrophy,no,upsloping,reversable_defect,58.0,132.0,224.0,173.0,3.2,2.0,disease
+101,female,non_anginal_pain,less_than_120mg/ml,normal,no,upsloping,fixed_defect,58.0,120.0,340.0,172.0,0.0,0.0,no disease
+102,male,non_anginal_pain,greater_than_120mg/ml,left_ventricular_hypertrophy,no,upsloping,fixed_defect,58.0,140.0,211.0,165.0,0.0,0.0,no disease
+103,male,non_anginal_pain,less_than_120mg/ml,left_ventricular_hypertrophy,no,flat,reversable_defect,57.0,128.0,229.0,150.0,0.4,1.0,disease
+104,male,non_anginal_pain,less_than_120mg/ml,normal,no,upsloping,fixed_defect,57.0,150.0,168.0,174.0,1.6,0.0,no disease
+105,male,non_anginal_pain,greater_than_120mg/ml,normal,no,upsloping,reversable_defect,57.0,150.0,126.0,173.0,0.2,1.0,no disease
+106,male,non_anginal_pain,greater_than_120mg/ml,left_ventricular_hypertrophy,yes,flat,normal,56.0,130.0,256.0,142.0,0.6,1.0,disease
+107,male,non_anginal_pain,less_than_120mg/ml,left_ventricular_hypertrophy,no,downsloping,fixed_defect,54.0,125.0,273.0,152.0,0.5,1.0,no disease
+108,male,non_anginal_pain,less_than_120mg/ml,left_ventricular_hypertrophy,no,flat,reversable_defect,54.0,120.0,258.0,147.0,0.4,0.0,no disease
+109,female,non_anginal_pain,less_than_120mg/ml,normal,no,flat,fixed_defect,54.0,110.0,214.0,158.0,1.6,0.0,no disease
+110,female,non_anginal_pain,greater_than_120mg/ml,normal,no,upsloping,fixed_defect,54.0,135.0,304.0,170.0,0.0,0.0,no disease
+111,male,non_anginal_pain,less_than_120mg/ml,left_ventricular_hypertrophy,no,upsloping,reversable_defect,54.0,150.0,232.0,165.0,1.6,0.0,no disease
+112,female,non_anginal_pain,less_than_120mg/ml,left_ventricular_hypertrophy,no,upsloping,fixed_defect,54.0,108.0,267.0,167.0,0.0,0.0,no disease
+113,female,non_anginal_pain,less_than_120mg/ml,normal,no,upsloping,fixed_defect,54.0,160.0,201.0,163.0,0.0,1.0,no disease
+114,male,non_anginal_pain,greater_than_120mg/ml,left_ventricular_hypertrophy,no,downsloping,fixed_defect,53.0,130.0,197.0,152.0,1.2,0.0,no disease
+115,male,non_anginal_pain,greater_than_120mg/ml,left_ventricular_hypertrophy,no,upsloping,fixed_defect,53.0,130.0,246.0,173.0,0.0,3.0,no disease
+116,female,non_anginal_pain,less_than_120mg/ml,left_ventricular_hypertrophy,no,flat,fixed_defect,52.0,136.0,196.0,169.0,0.1,0.0,no disease
+117,male,non_anginal_pain,greater_than_120mg/ml,normal,no,upsloping,reversable_defect,52.0,172.0,199.0,162.0,0.5,0.0,no disease
+118,male,non_anginal_pain,less_than_120mg/ml,normal,yes,flat,fixed_defect,51.0,100.0,222.0,143.0,1.2,0.0,no disease
+119,male,non_anginal_pain,greater_than_120mg/ml,left_ventricular_hypertrophy,no,flat,fixed_defect,51.0,125.0,245.0,166.0,2.4,0.0,no disease
+120,male,non_anginal_pain,less_than_120mg/ml,normal,no,upsloping,fixed_defect,51.0,110.0,175.0,123.0,0.6,0.0,no disease
+121,female,non_anginal_pain,less_than_120mg/ml,left_ventricular_hypertrophy,no,upsloping,fixed_defect,51.0,140.0,308.0,142.0,1.5,1.0,no disease
+122,female,non_anginal_pain,less_than_120mg/ml,left_ventricular_hypertrophy,no,upsloping,fixed_defect,51.0,130.0,256.0,149.0,0.5,0.0,no disease
+123,male,non_anginal_pain,less_than_120mg/ml,normal,yes,upsloping,reversable_defect,51.0,94.0,227.0,154.0,0.0,1.0,no disease
+124,female,non_anginal_pain,less_than_120mg/ml,left_ventricular_hypertrophy,no,upsloping,fixed_defect,51.0,120.0,295.0,157.0,0.6,0.0,no disease
+125,female,non_anginal_pain,less_than_120mg/ml,normal,no,flat,fixed_defect,50.0,120.0,219.0,158.0,1.6,0.0,no disease
+126,male,non_anginal_pain,less_than_120mg/ml,normal,no,flat,reversable_defect,50.0,140.0,233.0,163.0,0.6,1.0,disease
+127,male,non_anginal_pain,less_than_120mg/ml,normal,no,upsloping,fixed_defect,50.0,129.0,196.0,163.0,0.0,0.0,no disease
+128,male,non_anginal_pain,less_than_120mg/ml,normal,no,flat,reversable_defect,49.0,120.0,188.0,139.0,2.0,3.0,disease
+129,male,non_anginal_pain,less_than_120mg/ml,left_ventricular_hypertrophy,no,upsloping,fixed_defect,49.0,118.0,149.0,126.0,0.8,3.0,disease
+130,female,non_anginal_pain,less_than_120mg/ml,normal,no,upsloping,fixed_defect,48.0,130.0,275.0,139.0,0.2,0.0,no disease
+131,male,non_anginal_pain,greater_than_120mg/ml,normal,no,upsloping,fixed_defect,48.0,124.0,255.0,175.0,0.0,2.0,no disease
+132,male,non_anginal_pain,less_than_120mg/ml,left_ventricular_hypertrophy,no,upsloping,fixed_defect,47.0,138.0,257.0,156.0,0.0,0.0,no disease
+133,male,non_anginal_pain,less_than_120mg/ml,normal,no,upsloping,fixed_defect,47.0,108.0,243.0,152.0,0.0,0.0,disease
+134,male,non_anginal_pain,less_than_120mg/ml,normal,no,upsloping,fixed_defect,47.0,130.0,253.0,179.0,0.0,0.0,no disease
+135,female,non_anginal_pain,less_than_120mg/ml,left_ventricular_hypertrophy,yes,downsloping,fixed_defect,46.0,142.0,177.0,160.0,1.4,0.0,no disease
+136,male,non_anginal_pain,less_than_120mg/ml,normal,no,flat,fixed_defect,46.0,150.0,231.0,147.0,3.6,0.0,disease
+137,female,non_anginal_pain,less_than_120mg/ml,normal,no,flat,fixed_defect,44.0,108.0,141.0,175.0,0.6,0.0,no disease
+138,female,non_anginal_pain,less_than_120mg/ml,normal,no,flat,fixed_defect,44.0,118.0,242.0,149.0,0.3,1.0,no disease
+139,male,non_anginal_pain,less_than_120mg/ml,normal,yes,upsloping,fixed_defect,44.0,130.0,233.0,179.0,0.4,0.0,no disease
+140,male,non_anginal_pain,less_than_120mg/ml,left_ventricular_hypertrophy,no,upsloping,fixed_defect,44.0,140.0,235.0,180.0,0.0,0.0,no disease
+141,male,non_anginal_pain,less_than_120mg/ml,normal,no,upsloping,fixed_defect,44.0,120.0,226.0,169.0,0.0,0.0,no disease
+142,female,non_anginal_pain,less_than_120mg/ml,normal,no,flat,fixed_defect,43.0,122.0,213.0,165.0,0.2,0.0,no disease
+143,male,non_anginal_pain,less_than_120mg/ml,normal,no,upsloping,fixed_defect,43.0,130.0,315.0,162.0,1.9,1.0,no disease
+144,male,non_anginal_pain,greater_than_120mg/ml,normal,no,downsloping,reversable_defect,42.0,120.0,240.0,194.0,0.8,0.0,no disease
+145,female,non_anginal_pain,less_than_120mg/ml,normal,no,flat,fixed_defect,42.0,120.0,209.0,173.0,0.0,0.0,no disease
+146,male,non_anginal_pain,less_than_120mg/ml,normal,no,upsloping,fixed_defect,42.0,130.0,180.0,150.0,0.0,0.0,no disease
+147,male,non_anginal_pain,less_than_120mg/ml,left_ventricular_hypertrophy,no,flat,fixed_defect,41.0,130.0,214.0,168.0,2.0,0.0,no disease
+148,male,non_anginal_pain,less_than_120mg/ml,normal,no,upsloping,fixed_defect,41.0,112.0,250.0,179.0,0.0,0.0,no disease
+149,female,non_anginal_pain,less_than_120mg/ml,left_ventricular_hypertrophy,yes,upsloping,fixed_defect,41.0,112.0,268.0,172.0,0.0,0.0,no disease
+150,female,non_anginal_pain,less_than_120mg/ml,normal,no,flat,fixed_defect,39.0,138.0,220.0,152.0,0.0,0.0,no disease
+151,male,non_anginal_pain,less_than_120mg/ml,left_ventricular_hypertrophy,no,upsloping,fixed_defect,39.0,140.0,321.0,182.0,0.0,0.0,no disease
+152,female,non_anginal_pain,less_than_120mg/ml,normal,no,upsloping,fixed_defect,39.0,94.0,199.0,179.0,0.0,0.0,no disease
+153,male,non_anginal_pain,less_than_120mg/ml,normal,no,downsloping,fixed_defect,37.0,130.0,250.0,187.0,3.5,0.0,no disease
+154,female,non_anginal_pain,less_than_120mg/ml,normal,no,upsloping,fixed_defect,37.0,120.0,215.0,170.0,0.0,0.0,no disease
+155,male,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,yes,upsloping,fixed_defect,77.0,125.0,304.0,162.0,0.0,3.0,disease
+156,female,asymptomatic,less_than_120mg/ml,normal,no,flat,fixed_defect,71.0,112.0,149.0,125.0,1.6,0.0,no disease
+157,male,asymptomatic,less_than_120mg/ml,normal,yes,downsloping,reversable_defect,70.0,145.0,174.0,125.0,2.6,0.0,disease
+158,male,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,no,flat,fixed_defect,70.0,130.0,322.0,109.0,2.4,3.0,disease
+159,male,asymptomatic,greater_than_120mg/ml,normal,no,flat,reversable_defect,68.0,144.0,193.0,141.0,3.4,2.0,disease
+160,male,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,yes,flat,fixed_defect,67.0,160.0,286.0,108.0,1.5,3.0,disease
+161,male,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,yes,flat,reversable_defect,67.0,120.0,229.0,129.0,2.6,2.0,disease
+162,male,asymptomatic,greater_than_120mg/ml,normal,no,flat,reversable_defect,67.0,125.0,254.0,163.0,0.2,2.0,disease
+163,male,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,yes,flat,fixed_defect,67.0,100.0,299.0,125.0,0.9,2.0,disease
+164,male,asymptomatic,less_than_120mg/ml,normal,no,flat,fixed_defect,67.0,120.0,237.0,71.0,1.0,0.0,disease
+165,female,asymptomatic,less_than_120mg/ml,normal,no,upsloping,fixed_defect,67.0,106.0,223.0,142.0,0.3,2.0,no disease
+166,male,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,no,flat,fixed_defect,66.0,120.0,302.0,151.0,0.4,0.0,no disease
+167,female,asymptomatic,greater_than_120mg/ml,normal,yes,flat,reversable_defect,66.0,178.0,228.0,165.0,1.0,2.0,disease
+168,male,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,yes,upsloping,fixed_defect,66.0,112.0,212.0,132.0,0.1,1.0,disease
+169,male,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,no,upsloping,normal,66.0,160.0,228.0,138.0,2.3,0.0,no disease
+170,female,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,no,flat,reversable_defect,65.0,150.0,225.0,114.0,1.0,3.0,disease
+171,male,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,no,flat,reversable_defect,65.0,135.0,254.0,127.0,2.8,1.0,disease
+172,male,asymptomatic,less_than_120mg/ml,normal,no,upsloping,reversable_defect,65.0,120.0,177.0,140.0,0.4,0.0,no disease
+173,male,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,no,upsloping,normal,65.0,110.0,248.0,158.0,0.6,2.0,disease
+174,male,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,yes,downsloping,fixed_defect,64.0,120.0,246.0,96.0,2.2,1.0,disease
+175,male,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,no,flat,normal,64.0,145.0,212.0,132.0,2.0,2.0,disease
+176,female,asymptomatic,less_than_120mg/ml,normal,no,flat,fixed_defect,64.0,130.0,303.0,122.0,2.0,2.0,no disease
+177,male,asymptomatic,less_than_120mg/ml,normal,yes,flat,reversable_defect,64.0,128.0,263.0,105.0,0.2,1.0,no disease
+178,female,asymptomatic,less_than_120mg/ml,normal,yes,upsloping,fixed_defect,64.0,180.0,325.0,154.0,0.0,0.0,no disease
+179,male,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,no,flat,reversable_defect,63.0,130.0,254.0,147.0,1.4,1.0,disease
+180,female,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,no,flat,reversable_defect,63.0,150.0,407.0,154.0,4.0,3.0,disease
+181,female,asymptomatic,less_than_120mg/ml,normal,yes,flat,fixed_defect,63.0,108.0,269.0,169.0,1.8,2.0,disease
+182,female,asymptomatic,less_than_120mg/ml,normal,yes,flat,fixed_defect,63.0,124.0,197.0,136.0,0.0,0.0,disease
+183,male,asymptomatic,greater_than_120mg/ml,left_ventricular_hypertrophy,yes,upsloping,reversable_defect,63.0,130.0,330.0,132.0,1.8,3.0,disease
+184,male,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,yes,upsloping,reversable_defect,63.0,140.0,187.0,144.0,4.0,2.0,disease
+185,female,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,no,downsloping,fixed_defect,62.0,140.0,268.0,160.0,3.6,2.0,disease
+186,female,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,no,downsloping,reversable_defect,62.0,160.0,164.0,145.0,6.2,3.0,disease
+187,male,asymptomatic,less_than_120mg/ml,normal,yes,flat,reversable_defect,62.0,120.0,267.0,99.0,1.8,2.0,disease
+188,female,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,no,flat,fixed_defect,62.0,140.0,394.0,157.0,1.2,0.0,no disease
+189,female,asymptomatic,greater_than_120mg/ml,normal,no,flat,fixed_defect,62.0,138.0,294.0,106.0,1.9,3.0,disease
+190,female,asymptomatic,less_than_120mg/ml,normal,yes,flat,fixed_defect,62.0,150.0,244.0,154.0,1.4,0.0,disease
+191,female,asymptomatic,less_than_120mg/ml,normal,no,upsloping,fixed_defect,62.0,124.0,209.0,163.0,0.0,0.0,no disease
+192,male,asymptomatic,less_than_120mg/ml,normal,yes,flat,reversable_defect,61.0,120.0,260.0,140.0,3.6,1.0,disease
+193,female,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,yes,flat,reversable_defect,61.0,145.0,307.0,146.0,1.0,0.0,disease
+194,male,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,yes,flat,fixed_defect,61.0,138.0,166.0,125.0,3.6,1.0,disease
+195,female,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,no,upsloping,fixed_defect,61.0,130.0,330.0,169.0,0.0,0.0,disease
+196,male,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,yes,upsloping,reversable_defect,61.0,140.0,207.0,138.0,1.9,1.0,disease
+197,male,asymptomatic,less_than_120mg/ml,normal,no,upsloping,reversable_defect,61.0,148.0,203.0,161.0,0.0,1.0,disease
+198,male,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,yes,flat,reversable_defect,60.0,130.0,206.0,132.0,2.4,2.0,disease
+199,male,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,yes,flat,reversable_defect,60.0,145.0,282.0,142.0,2.8,2.0,disease
+200,male,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,yes,flat,reversable_defect,60.0,125.0,258.0,141.0,2.8,1.0,disease
+201,female,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,no,flat,reversable_defect,60.0,150.0,258.0,157.0,2.6,2.0,disease
+202,male,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,no,flat,reversable_defect,60.0,140.0,293.0,170.0,1.2,2.0,disease
+203,male,asymptomatic,greater_than_120mg/ml,normal,yes,upsloping,reversable_defect,60.0,117.0,230.0,160.0,1.4,2.0,disease
+204,male,asymptomatic,less_than_120mg/ml,normal,yes,upsloping,reversable_defect,60.0,130.0,253.0,144.0,1.4,1.0,disease
+205,female,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,no,upsloping,fixed_defect,60.0,158.0,305.0,161.0,0.0,0.0,disease
+206,male,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,yes,downsloping,reversable_defect,59.0,170.0,326.0,140.0,3.4,0.0,disease
+207,male,asymptomatic,less_than_120mg/ml,normal,no,flat,reversable_defect,59.0,135.0,234.0,161.0,0.5,0.0,no disease
+208,male,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,yes,flat,reversable_defect,59.0,110.0,239.0,142.0,1.2,1.0,disease
+209,female,asymptomatic,less_than_120mg/ml,normal,yes,flat,fixed_defect,59.0,174.0,249.0,143.0,0.0,0.0,disease
+210,male,asymptomatic,greater_than_120mg/ml,left_ventricular_hypertrophy,no,flat,normal,59.0,164.0,176.0,90.0,1.0,2.0,disease
+211,male,asymptomatic,less_than_120mg/ml,normal,yes,upsloping,reversable_defect,59.0,140.0,177.0,162.0,0.0,1.0,disease
+212,male,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,no,upsloping,fixed_defect,59.0,138.0,271.0,182.0,0.0,0.0,no disease
+213,male,asymptomatic,less_than_120mg/ml,ST-T_wave_abnormality,no,downsloping,normal,58.0,114.0,318.0,140.0,4.4,3.0,disease
+214,male,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,yes,flat,reversable_defect,58.0,128.0,216.0,131.0,2.2,3.0,disease
+215,female,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,no,flat,fixed_defect,58.0,100.0,248.0,122.0,1.0,0.0,no disease
+216,male,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,yes,flat,reversable_defect,58.0,128.0,259.0,130.0,3.0,2.0,disease
+217,male,asymptomatic,less_than_120mg/ml,normal,no,flat,reversable_defect,58.0,146.0,218.0,105.0,2.0,1.0,disease
+218,female,asymptomatic,less_than_120mg/ml,normal,no,flat,fixed_defect,58.0,130.0,197.0,131.0,0.6,0.0,no disease
+219,female,asymptomatic,greater_than_120mg/ml,left_ventricular_hypertrophy,yes,flat,normal,58.0,170.0,225.0,146.0,2.8,2.0,disease
+220,male,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,yes,upsloping,reversable_defect,58.0,150.0,270.0,111.0,0.8,0.0,disease
+221,male,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,no,upsloping,reversable_defect,58.0,125.0,300.0,171.0,0.0,2.0,disease
+222,male,asymptomatic,less_than_120mg/ml,normal,no,upsloping,reversable_defect,58.0,100.0,234.0,156.0,0.1,1.0,disease
+223,male,asymptomatic,less_than_120mg/ml,normal,no,flat,normal,57.0,140.0,192.0,148.0,0.4,0.0,no disease
+224,male,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,yes,flat,normal,57.0,150.0,276.0,112.0,0.6,1.0,disease
+225,male,asymptomatic,greater_than_120mg/ml,left_ventricular_hypertrophy,no,flat,reversable_defect,57.0,165.0,289.0,124.0,1.0,3.0,disease
+226,male,asymptomatic,less_than_120mg/ml,normal,yes,flat,reversable_defect,57.0,152.0,274.0,88.0,1.2,1.0,disease
+227,male,asymptomatic,less_than_120mg/ml,normal,yes,flat,normal,57.0,110.0,201.0,126.0,1.5,0.0,no disease
+228,male,asymptomatic,less_than_120mg/ml,normal,yes,flat,reversable_defect,57.0,110.0,335.0,143.0,3.0,1.0,disease
+229,female,asymptomatic,less_than_120mg/ml,normal,yes,flat,reversable_defect,57.0,140.0,241.0,123.0,0.2,0.0,disease
+230,male,asymptomatic,less_than_120mg/ml,normal,yes,flat,reversable_defect,57.0,130.0,131.0,115.0,1.2,1.0,disease
+231,female,asymptomatic,less_than_120mg/ml,normal,yes,upsloping,fixed_defect,57.0,120.0,354.0,163.0,0.6,0.0,no disease
+232,female,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,no,upsloping,fixed_defect,57.0,128.0,303.0,159.0,0.0,1.0,no disease
+233,male,asymptomatic,less_than_120mg/ml,normal,yes,upsloping,reversable_defect,57.0,132.0,207.0,168.0,0.0,0.0,no disease
+234,female,asymptomatic,greater_than_120mg/ml,left_ventricular_hypertrophy,yes,downsloping,reversable_defect,56.0,200.0,288.0,133.0,4.0,2.0,disease
+235,male,asymptomatic,greater_than_120mg/ml,left_ventricular_hypertrophy,yes,downsloping,reversable_defect,56.0,130.0,283.0,103.0,1.6,0.0,disease
+236,male,asymptomatic,greater_than_120mg/ml,left_ventricular_hypertrophy,yes,flat,fixed_defect,56.0,125.0,249.0,144.0,1.2,1.0,disease
+237,male,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,yes,flat,normal,56.0,132.0,184.0,105.0,2.1,1.0,disease
+238,female,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,yes,flat,reversable_defect,56.0,134.0,409.0,150.0,1.9,2.0,disease
+239,male,asymptomatic,less_than_120mg/ml,normal,yes,downsloping,reversable_defect,55.0,140.0,217.0,111.0,5.6,0.0,disease
+240,male,asymptomatic,less_than_120mg/ml,normal,yes,flat,reversable_defect,55.0,132.0,353.0,132.0,1.2,1.0,disease
+241,male,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,yes,flat,reversable_defect,55.0,160.0,289.0,145.0,0.8,1.0,disease
+242,female,asymptomatic,less_than_120mg/ml,ST-T_wave_abnormality,yes,flat,fixed_defect,55.0,180.0,327.0,117.0,3.4,0.0,disease
+243,female,asymptomatic,less_than_120mg/ml,ST-T_wave_abnormality,yes,flat,reversable_defect,55.0,128.0,205.0,130.0,2.0,1.0,disease
+244,male,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,yes,flat,reversable_defect,54.0,124.0,266.0,109.0,2.2,1.0,disease
+245,male,asymptomatic,less_than_120mg/ml,normal,no,flat,reversable_defect,54.0,120.0,188.0,113.0,1.4,1.0,disease
+246,male,asymptomatic,less_than_120mg/ml,normal,yes,flat,reversable_defect,54.0,110.0,239.0,126.0,2.8,1.0,disease
+247,male,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,yes,flat,fixed_defect,54.0,110.0,206.0,108.0,0.0,1.0,disease
+248,male,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,yes,flat,fixed_defect,54.0,122.0,286.0,116.0,3.2,2.0,disease
+249,male,asymptomatic,less_than_120mg/ml,normal,no,upsloping,fixed_defect,54.0,140.0,239.0,160.0,1.2,0.0,no disease
+250,male,asymptomatic,greater_than_120mg/ml,left_ventricular_hypertrophy,yes,downsloping,reversable_defect,53.0,140.0,203.0,155.0,3.1,0.0,disease
+251,female,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,no,flat,fixed_defect,53.0,130.0,264.0,143.0,0.4,0.0,no disease
+252,male,asymptomatic,less_than_120mg/ml,normal,yes,flat,reversable_defect,53.0,123.0,282.0,95.0,2.0,2.0,disease
+253,female,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,no,upsloping,fixed_defect,53.0,138.0,234.0,160.0,0.0,0.0,no disease
+254,male,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,yes,upsloping,reversable_defect,53.0,142.0,226.0,111.0,0.0,0.0,no disease
+255,male,asymptomatic,less_than_120mg/ml,normal,yes,upsloping,reversable_defect,52.0,128.0,255.0,161.0,0.0,1.0,disease
+256,male,asymptomatic,greater_than_120mg/ml,normal,no,upsloping,reversable_defect,52.0,108.0,233.0,147.0,0.1,3.0,no disease
+257,male,asymptomatic,less_than_120mg/ml,normal,no,upsloping,fixed_defect,52.0,112.0,230.0,160.0,0.0,1.0,disease
+258,male,asymptomatic,less_than_120mg/ml,normal,no,upsloping,reversable_defect,52.0,125.0,212.0,168.0,1.0,2.0,disease
+259,female,asymptomatic,less_than_120mg/ml,normal,yes,flat,reversable_defect,51.0,130.0,305.0,142.0,1.2,0.0,disease
+260,male,asymptomatic,less_than_120mg/ml,normal,yes,flat,reversable_defect,51.0,140.0,298.0,122.0,4.2,3.0,disease
+261,male,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,yes,upsloping,fixed_defect,51.0,140.0,261.0,186.0,0.0,0.0,no disease
+262,male,asymptomatic,less_than_120mg/ml,normal,yes,upsloping,reversable_defect,51.0,140.0,299.0,173.0,1.6,0.0,disease
+263,male,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,no,flat,reversable_defect,50.0,150.0,243.0,128.0,2.6,0.0,disease
+264,male,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,yes,flat,reversable_defect,50.0,144.0,200.0,126.0,0.9,0.0,disease
+265,female,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,no,upsloping,fixed_defect,50.0,110.0,254.0,159.0,0.0,0.0,no disease
+266,female,asymptomatic,less_than_120mg/ml,normal,no,upsloping,fixed_defect,49.0,130.0,269.0,163.0,0.0,0.0,no disease
+267,male,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,no,flat,reversable_defect,48.0,124.0,274.0,166.0,0.5,0.0,disease
+268,male,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,no,upsloping,fixed_defect,48.0,122.0,222.0,186.0,0.0,0.0,no disease
+269,male,asymptomatic,greater_than_120mg/ml,left_ventricular_hypertrophy,yes,upsloping,reversable_defect,48.0,130.0,256.0,150.0,0.0,2.0,disease
+270,male,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,yes,flat,fixed_defect,47.0,110.0,275.0,118.0,1.0,1.0,disease
+271,male,asymptomatic,less_than_120mg/ml,normal,no,upsloping,fixed_defect,47.0,112.0,204.0,143.0,0.1,0.0,no disease
+272,female,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,yes,flat,fixed_defect,46.0,138.0,243.0,152.0,0.0,0.0,no disease
+273,male,asymptomatic,less_than_120mg/ml,normal,yes,flat,reversable_defect,46.0,140.0,311.0,120.0,1.8,2.0,disease
+274,male,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,no,upsloping,reversable_defect,46.0,120.0,249.0,144.0,0.8,0.0,disease
+275,male,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,yes,flat,fixed_defect,45.0,104.0,208.0,148.0,3.0,0.0,no disease
+276,female,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,yes,flat,fixed_defect,45.0,138.0,236.0,152.0,0.2,0.0,no disease
+277,male,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,yes,flat,reversable_defect,45.0,142.0,309.0,147.0,0.0,3.0,disease
+278,male,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,no,upsloping,fixed_defect,45.0,115.0,260.0,185.0,0.0,0.0,no disease
+279,male,asymptomatic,less_than_120mg/ml,normal,yes,downsloping,normal,44.0,120.0,169.0,144.0,2.8,0.0,disease
+280,male,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,no,upsloping,fixed_defect,44.0,112.0,290.0,153.0,0.0,1.0,disease
+281,male,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,no,upsloping,fixed_defect,44.0,110.0,197.0,177.0,0.0,1.0,disease
+282,male,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,yes,flat,reversable_defect,43.0,120.0,177.0,120.0,2.5,0.0,disease
+283,female,asymptomatic,greater_than_120mg/ml,left_ventricular_hypertrophy,yes,flat,reversable_defect,43.0,132.0,341.0,136.0,3.0,0.0,disease
+284,male,asymptomatic,less_than_120mg/ml,normal,no,flat,fixed_defect,43.0,115.0,303.0,181.0,1.2,0.0,no disease
+285,male,asymptomatic,less_than_120mg/ml,normal,no,upsloping,fixed_defect,43.0,150.0,247.0,171.0,1.5,0.0,no disease
+286,male,asymptomatic,less_than_120mg/ml,normal,no,upsloping,reversable_defect,43.0,110.0,211.0,161.0,0.0,0.0,no disease
+287,female,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,no,flat,fixed_defect,42.0,102.0,265.0,122.0,0.6,0.0,no disease
+288,male,asymptomatic,less_than_120mg/ml,normal,yes,flat,normal,42.0,136.0,315.0,125.0,1.8,0.0,disease
+289,male,asymptomatic,less_than_120mg/ml,normal,no,upsloping,fixed_defect,42.0,140.0,226.0,178.0,0.0,0.0,no disease
+290,male,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,no,upsloping,reversable_defect,41.0,110.0,172.0,158.0,0.0,0.0,disease
+291,male,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,yes,flat,reversable_defect,40.0,110.0,167.0,114.0,2.0,0.0,disease
+292,male,asymptomatic,less_than_120mg/ml,normal,no,upsloping,reversable_defect,40.0,152.0,223.0,181.0,0.0,0.0,disease
+293,male,asymptomatic,less_than_120mg/ml,normal,no,flat,reversable_defect,39.0,118.0,219.0,140.0,1.2,0.0,disease
+294,male,asymptomatic,less_than_120mg/ml,normal,yes,flat,reversable_defect,35.0,120.0,198.0,130.0,1.6,0.0,disease
+295,female,asymptomatic,less_than_120mg/ml,normal,no,upsloping,fixed_defect,35.0,138.0,183.0,182.0,1.4,0.0,no disease
+296,male,asymptomatic,less_than_120mg/ml,left_ventricular_hypertrophy,yes,upsloping,reversable_defect,35.0,126.0,282.0,156.0,0.0,0.0,disease
