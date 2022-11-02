@@ -1,6 +1,7 @@
 [core]
     remote = ml_project
     autostage = true
+    analytics = false
 ['remote "ml_project"']
-    url = s3://ml_project/data
+    url = s3://ml_project/dvc
     endpointurl = https://hb.bizmrg.com
