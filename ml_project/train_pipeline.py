@@ -92,7 +92,17 @@ def run_train_pipeline(training_pipeline_params):
     train_target = extract_target(train_df, training_pipeline_params.feature_params)
 
     train_df = train_df.drop(training_pipeline_params.feature_params.target_col, axis=1)
+    write_data(
+        training_pipeline_params.output_proccessed_data_path,
+        "train.csv",
+        train_df,
+    )
     val_df = val_df.drop(training_pipeline_params.feature_params.target_col, axis=1)
+    write_data(
+        training_pipeline_params.output_proccessed_data_path,
+        "test.csv",
+        val_df,
+    )
 
     logger.info(f"train_df.shape is {train_df.shape}")
     logger.info(f"val_df.shape is {val_df.shape}")
@@ -102,11 +112,12 @@ def run_train_pipeline(training_pipeline_params):
     transformer.fit(train_df)
 
     train_features = make_features(transformer, train_df)
-    logger.info(f"write train data")
     write_data(
         training_pipeline_params.output_proccessed_data_path,
+        "train_processed.csv",
         train_features,
     )
+    logger.info(f"write train data")
 
     logger.info(f"train_features.shape is {train_features.shape}")
     model = train_model(

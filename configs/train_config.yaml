@@ -3,7 +3,7 @@
 input_data_path: "data/raw/heart_cleveland_upload.csv"
 output_model_path: "models/LogisticRegressionCV_model.pkl"
 output_clean_data_path: "data/processed/heart_cleveland_upload_processed.csv"
-output_proccessed_data_path: "data/processed/train.csv"
+output_proccessed_data_path: "data/processed"
 make_report: False
 use_mlflow: False
 mlflow_uri: "postgresql://ml_project_user:g51HN042rn6S6G{T@5.188.140.81/PostgreSQL-3482"

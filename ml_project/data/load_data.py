@@ -8,7 +8,7 @@ from sklearn.model_selection import train_test_split
 
 from ml_project.entities.split_params import SplittingParams
 import logging
-
+import os
 
 def download_data_from_s3(s3_bucket: str, s3_path: str, output: str) -> NoReturn:
     logger = logging.getLogger(__name__)
@@ -31,9 +31,11 @@ def read_data(path: str) -> pd.DataFrame:
     return data
 
 
-def write_data(path: str, data: Any) -> NoReturn:
+def write_data(path: str, filename: str, data: Any) -> NoReturn:
     print(path)
-    pd.DataFrame(data).to_csv(path, index=False)
+    if isinstance(data, pd.DataFrame):
+        data.to_csv(os.path.join(path, filename), index=False)
+    pd.DataFrame(data).to_csv(os.path.join(path, filename), index=False)
 
 
 def split_train_val_data(
