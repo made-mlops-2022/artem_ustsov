@@ -1,5 +1,4 @@
 [core]
     remote = ml_project
-    autostage = true
 ['remote "ml_project"']
-    url = s3://ml_project/data
+    url = s3://ml_project
