@@ -4,6 +4,7 @@ import logging
 from typing import List, NoReturn
 import numpy as np
 import pandas as pd
+pd.options.mode.chained_assignment = None
 from sklearn.base import BaseEstimator, TransformerMixin
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
@@ -53,7 +54,7 @@ class TargetTransformer(BaseEstimator, TransformerMixin):
             return 'disease'
 
     def transform(self, x_data: pd.DataFrame, y: pd.Series = None) -> pd.DataFrame:
-        x_data.loc[:, 'condition'] = x_data['condition'].apply(self.process_condition)
+        x_data.loc[:, x_data.columns[0]] = x_data[x_data.columns[0]].apply(self.process_condition)
         return x_data
 
 

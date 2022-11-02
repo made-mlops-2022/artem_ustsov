@@ -74,7 +74,10 @@ def run_train_pipeline(training_pipeline_params):
                 os.path.join(downloading_params.output_folder, Path(path).name),
             )
 
-    logger.info(f"Start train pipeline with params {training_pipeline_params}")
+    logger.info(f"Start train pipeline with params:")
+    for field, value in training_pipeline_params.__dict__.items():
+        logger.info(f"{field}={value}")
+
     data = read_data(training_pipeline_params.input_data_path)
     logger.info(f"data.shape is {data.shape}")
 
@@ -88,8 +91,8 @@ def run_train_pipeline(training_pipeline_params):
     val_target = extract_target(val_df, training_pipeline_params.feature_params)
     train_target = extract_target(train_df, training_pipeline_params.feature_params)
 
-    train_df = train_df.drop(training_pipeline_params.feature_params.target_col, 1)
-    val_df = val_df.drop(training_pipeline_params.feature_params.target_col, 1)
+    train_df = train_df.drop(training_pipeline_params.feature_params.target_col, axis=1)
+    val_df = val_df.drop(training_pipeline_params.feature_params.target_col, axis=1)
 
     logger.info(f"train_df.shape is {train_df.shape}")
     logger.info(f"val_df.shape is {val_df.shape}")
