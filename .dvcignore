@@ -13,5 +13,4 @@ README.md
 requirements.txt
 setup.py
 tox.ini
-reports
 notebooks
