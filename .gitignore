@@ -1,3 +1,5 @@
 .dvc
 .idea
 .DS_Store
+.venv
+venv
