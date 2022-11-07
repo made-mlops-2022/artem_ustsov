@@ -8,6 +8,6 @@
 
 #### Homeworks:
 - HW_1: [Production Ready Project](https://github.com/made-mlops-2022/artem_ustsov/blob/main/hw_descriptions/HW_1.md])
-- HW_2:
+- HW_2: [Online Inference]()
 - HW_3:
 - HW_4:
