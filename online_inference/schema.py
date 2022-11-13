@@ -9,17 +9,17 @@ class MedicalFeatures(BaseModel):
     age: float
     sex: Literal[0, 1]
     chest_pain_type: Literal[0, 1, 2, 3]
-    resting_blood_pressure: float
-    cholesterol: float
     fasting_blood_sugar: Literal[0, 1]
     rest_ecg: Literal[0, 1, 2]
-    max_heart_rate_achieved: float
     exercise_induced_angina: Literal[0, 1]
-    oldpeak: float
     st_slope: Literal[0, 1, 2]
+    thalassemia: Literal[0, 1, 2]
+    resting_blood_pressure: float
+    cholesterol: float
+    max_heart_rate_achieved: float
     st_depression: float
     num_major_vessels: float
-    thalassemia: Literal[0, 1, 2]
+
 
     @validator('age')
     def age_validator(cls, v):
@@ -45,8 +45,8 @@ class MedicalFeatures(BaseModel):
             raise ValueError('Wrong cholesterol value')
         return v
 
-    @validator('oldpeak')
-    def oldpeak_validator(cls, v):
+    @validator('num_major_vessels')
+    def num_major_vessels_validator(cls, v):
         if v < 0 or v > 8:
             raise ValueError('Wrong oldpeak value')
         return v
