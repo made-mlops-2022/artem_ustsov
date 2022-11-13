@@ -13,28 +13,52 @@ def initialize_model():
     load_model()
 
 
-def test_predict_endpoint():
+def test_predict_sick_endpoint():
     request = {
-        'age': 53,
-        'sex': 0,
-        'cp': 3,
-        'trestbps': 155,
-        'chol': 165,
-        'fbs': 1,
-        'restecg': 0,
-        'thalach': 91,
-        'exang': 0,
-        'oldpeak': 1.7,
-        'slope': 0,
-        'ca': 0,
-        'thal': 2
-        }
+        "age": 0,
+        "sex": 0,
+        "chest_pain_type": 0,
+        "resting_blood_pressure": 0,
+        "cholesterol": 0,
+        "fasting_blood_sugar": 0,
+        "rest_ecg": 0,
+        "max_heart_rate_achieved": 0,
+        "exercise_induced_angina": 0,
+        "st_depression": 0,
+        "st_slope": 0,
+        "num_major_vessels": 0,
+        "thalassemia": 0
+    }
     response = client.post(
         '/predict',
         json.dumps(request)
     )
     assert response.status_code == 200
     assert response.json() == {'condition': 'sick'}
+
+
+def test_predict_healthy_endpoint():
+    request = {
+        "age": 0,
+        "sex": 0,
+        "chest_pain_type": 0,
+        "resting_blood_pressure": 0,
+        "cholesterol": 0,
+        "fasting_blood_sugar": 0,
+        "rest_ecg": 0,
+        "max_heart_rate_achieved": 0,
+        "exercise_induced_angina": 0,
+        "st_depression": 0,
+        "st_slope": 0,
+        "num_major_vessels": 0,
+        "thalassemia": 0
+    }
+    response = client.post(
+        '/predict',
+        json.dumps(request)
+    )
+    assert response.status_code == 200
+    assert response.json() == {'condition': 'healthy'}
 
 
 def test_health_endpoint():
@@ -45,19 +69,19 @@ def test_health_endpoint():
 
 def test_missing_fields():
     request = {
-        'age': 53,
-        'sex': 0,
-        'cp': 3,
-        'trestbps': 155,
-        'chol': 165,
-        'fbs': 1,
-        'restecg': 0,
-        'thalach': 91,
-        'exang': 0,
-        'oldpeak': 1.7,
-        'slope': 0,
-        'thal': 2
-        }
+        "age": 0,
+        "sex": 0,
+        "chest_pain_type": 0,
+        "resting_blood_pressure": 0,
+        "cholesterol": 0,
+        "fasting_blood_sugar": 0,
+        "rest_ecg": 0,
+        "max_heart_rate_achieved": 0,
+        "exercise_induced_angina": 0,
+        "st_depression": 0,
+        "st_slope": 0,
+        "num_major_vessels": 0,
+    }
     response = client.post(
         '/predict',
         json.dumps(request)
@@ -68,20 +92,20 @@ def test_missing_fields():
 
 def test_categorical_fields():
     request = {
-        'age': 53,
-        'sex': 2,
-        'cp': 3,
-        'trestbps': 155,
-        'chol': 165,
-        'fbs': 1,
-        'restecg': 0,
-        'thalach': 91,
-        'exang': 0,
-        'oldpeak': 1.7,
-        'slope': 0,
-        'ca': 0,
-        'thal': 2
-        }
+        "age": 0,
+        "sex": 10,
+        "chest_pain_type": 0,
+        "resting_blood_pressure": 0,
+        "cholesterol": 0,
+        "fasting_blood_sugar": 0,
+        "rest_ecg": 0,
+        "max_heart_rate_achieved": 0,
+        "exercise_induced_angina": 0,
+        "st_depression": 0,
+        "st_slope": 0,
+        "num_major_vessels": 0,
+        "thalassemia": 0
+    }
     response = client.post(
         '/predict',
         json.dumps(request)
@@ -92,20 +116,20 @@ def test_categorical_fields():
 
 def test_numerical_fields():
     request = {
-        'age': 530,
-        'sex': 1,
-        'cp': 3,
-        'trestbps': 155,
-        'chol': 165,
-        'fbs': 1,
-        'restecg': 0,
-        'thalach': 91,
-        'exang': 0,
-        'oldpeak': 1.7,
-        'slope': 0,
-        'ca': 0,
-        'thal': 2
-        }
+        "age": 238,
+        "sex": 10,
+        "chest_pain_type": 0,
+        "resting_blood_pressure": 0,
+        "cholesterol": 0,
+        "fasting_blood_sugar": 0,
+        "rest_ecg": 0,
+        "max_heart_rate_achieved": 0,
+        "exercise_induced_angina": 0,
+        "st_depression": 0,
+        "st_slope": 0,
+        "num_major_vessels": 0,
+        "thalassemia": 0
+    }
     response = client.post(
         '/predict',
         json.dumps(request)

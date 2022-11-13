@@ -15,7 +15,7 @@ model = None
 
 @app.on_event('startup')
 def load_model():
-    """Predefines. Upload the model"""
+    """Predefines. Upload the model from S3"""
 
     path_to_model = os.getenv('PATH_TO_MODEL')
     with open(path_to_model, 'rb') as f:
@@ -26,7 +26,6 @@ def load_model():
 @app.get('/')
 def home():
     """Home page"""
-
     return {"key": "Hello"}
 
 
@@ -38,26 +37,22 @@ async def predict(data: MedicalFeatures):
 
     data_df = pd.DataFrame([data.dict()])
     y = model.predict(data_df)
-    condition = 'healthy' if not y[0] else 'sick'
 
-    return {'condition': condition}
+    return {'condition': 'healthy' if not y[0] else 'sick'}
 
 
 def check_ready():
     """General model check"""
-
     return model is not None
 
 
 async def success_handler(**kwargs):
     """Success health check"""
-
     return 'Model is ready'
 
 
 async def failure_handler(**kwargs):
     """Failure health check"""
-
     return 'Model is not ready'
 
 app.add_api_route('/health', health([check_ready],

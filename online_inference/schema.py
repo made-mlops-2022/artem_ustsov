@@ -9,17 +9,16 @@ class MedicalFeatures(BaseModel):
     age: float
     sex: Literal[0, 1]
     chest_pain_type: Literal[0, 1, 2, 3]
-    fasting_blood_sugar: Literal[0, 1]
-    rest_ecg: Literal[0, 1, 2]
-    exercise_induced_angina: Literal[0, 1]
-    st_slope: Literal[0, 1, 2]
-    thalassemia: Literal[0, 1, 2]
     resting_blood_pressure: float
     cholesterol: float
+    fasting_blood_sugar: Literal[0, 1]
+    rest_ecg: Literal[0, 1, 2]
     max_heart_rate_achieved: float
+    exercise_induced_angina: Literal[0, 1]
     st_depression: float
+    st_slope: Literal[0, 1, 2]
     num_major_vessels: float
-
+    thalassemia: Literal[0, 1, 2]
 
     @validator('age')
     def age_validator(cls, v):
