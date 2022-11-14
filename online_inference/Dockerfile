@@ -1,7 +1,7 @@
 FROM python:3.10-slim-bullseye
 RUN python3 -m pip install --upgrade pip
 
-COPY main.py schema.py tests/main_requsts_test.py run.sh requirements.txt ./online_inference/
+COPY main.py schema.py tests requests run.sh requirements.txt ./online_inference/
 
 WORKDIR /online_inference
 

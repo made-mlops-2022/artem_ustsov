@@ -37,8 +37,9 @@ async def predict(data: MedicalFeatures):
 
     data_df = pd.DataFrame([data.dict()])
     y = model.predict(data_df)
+    print(y)
 
-    return {'condition': 'healthy' if not y[0] else 'sick'}
+    return {'condition': 'disease' if y[0] == 1 else 'no disease'}
 
 
 def check_ready():
