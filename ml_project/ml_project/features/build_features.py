@@ -13,7 +13,7 @@ from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from sklearn.impute import SimpleImputer
 from sklearn.pipeline import FeatureUnion, Pipeline
 
-from ml_project_.ml_project.entities.feature_params import FeatureParams
+from ml_project.entities.feature_params import FeatureParams
 
 
 class FeatureSelector(BaseEstimator, TransformerMixin):

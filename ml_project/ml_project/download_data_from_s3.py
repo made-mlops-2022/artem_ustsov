@@ -4,10 +4,10 @@ import os
 import sys
 import click
 import logging
-from ml_project_.ml_project.entities.train_pipeline_params import (
+from ml_project.entities.train_pipeline_params import (
     read_training_pipeline_params,
 )
-from ml_project_.ml_project.data.load_data import download_data_from_s3
+from ml_project.data.load_data import download_data_from_s3
 from pathlib import Path
 
 

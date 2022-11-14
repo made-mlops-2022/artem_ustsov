@@ -6,7 +6,7 @@ from sklearn.pipeline import Pipeline
 import sklearn.model_selection as selection
 from sklearn.compose import ColumnTransformer
 
-from ml_project_.ml_project.entities.train_params import TrainingParams
+from ml_project.entities.train_params import TrainingParams
 
 SklearnClassifierModel = LogisticRegressionCV
 

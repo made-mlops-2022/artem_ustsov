@@ -5,17 +5,17 @@ import os
 import sys
 import click
 
-from ml_project_.ml_project.data import read_data
-from ml_project_.ml_project.vizualisation.vizualize import (
+from ml_project.data import read_data
+from ml_project.vizualisation.vizualize import (
     plot_roc_curve,
     plot_confusion_matrix,
 )
-from ml_project_.ml_project.entities.train_pipeline_params import (
+from ml_project.entities.train_pipeline_params import (
     read_training_pipeline_params,
 )
-from ml_project_.ml_project.models.predict_model import predict_model
-from ml_project_.ml_project.models.evaluate_model import evaluate_model
-from ml_project_.ml_project.models.process_model import deserialize_model
+from ml_project.models.predict_model import predict_model
+from ml_project.models.evaluate_model import evaluate_model
+from ml_project.models.process_model import deserialize_model
 
 import mlflow
 import logging

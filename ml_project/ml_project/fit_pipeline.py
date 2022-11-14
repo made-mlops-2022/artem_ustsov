@@ -5,23 +5,23 @@ import os
 import sys
 import click
 
-from ml_project_.ml_project.data import read_data, write_data, split_train_val_data
-from ml_project_.ml_project.entities.train_pipeline_params import (
+from ml_project.data import read_data, write_data, split_train_val_data
+from ml_project.entities.train_pipeline_params import (
     read_training_pipeline_params,
 )
-from ml_project_.ml_project.features import make_features
-from ml_project_.ml_project.features.build_features import (
+from ml_project.features import make_features
+from ml_project.features.build_features import (
     extract_target,
     build_transformer,
     process_raw_data,
 )
-from ml_project_.ml_project.models.process_model import serialize_model
-from ml_project_.ml_project.models.fit_model import train_model
+from ml_project.models.process_model import serialize_model
+from ml_project.models.fit_model import train_model
 
 
 import mlflow
 
-from ml_project_.ml_project.models.fit_model import create_inference_pipeline
+from ml_project.models.fit_model import create_inference_pipeline
 
 
 def fit_pipeline(config_path: str):

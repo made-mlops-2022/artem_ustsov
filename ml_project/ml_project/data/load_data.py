@@ -6,7 +6,7 @@ import pandas as pd
 import boto3
 from sklearn.model_selection import train_test_split
 
-from ml_project_.ml_project.entities.split_params import SplittingParams
+from ml_project.entities.split_params import SplittingParams
 import logging
 
 

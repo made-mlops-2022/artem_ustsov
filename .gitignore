@@ -54,7 +54,7 @@ coverage.xml
 *.log
 
 # Sphinx documentation
-ml_project_/docs/_build/
+ml_project/docs/_build/
 
 # PyBuilder
 target/
@@ -93,4 +93,4 @@ target/
 
 # Mypy cache
 .mypy_cache/
-logs/
+ml_project/logs/
