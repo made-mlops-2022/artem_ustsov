@@ -84,6 +84,7 @@ target/
 /.dvc/plots/
 # Mac OS-specific storage files
 .DS_Store
+<<<<<<< HEAD
 
 
 
@@ -94,3 +95,9 @@ target/
 # Mypy cache
 .mypy_cache/
 ml_project/logs/
+
+=======
+.venv
+venv
+inf_ex
+logs/
