@@ -9,12 +9,12 @@ from utils import LOCAL_DATA_DIR, default_args
 
 
 with DAG(
-    "generate",
+    "generate_data",
     default_args=default_args,
     schedule_interval="@daily",
     start_date=datetime(2022, 11, 25),
 ) as dag:
-    generate = DockerOperator(
+    generate_data = DockerOperator(
         image="airflow-generate-data",
         command="--output-dir /data/raw/{{ ds }}",
         network_mode="bridge",
@@ -26,4 +26,4 @@ with DAG(
         ],
     )
 
-    generate
+    generate_data

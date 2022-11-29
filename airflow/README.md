@@ -14,7 +14,7 @@ export FERNET_KEY=$(python3 fernet_gen.py)
 docker-compose up --build
 ~~~
 
-Airflow is now available at: http://127.0.0.1:8080   
+Airflow is now available on: http://127.0.0.1:8080   
 - login = admin  
 - password = admin  
 

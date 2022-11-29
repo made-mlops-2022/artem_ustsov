@@ -9,8 +9,8 @@ LOCAL_DATA_DIR = Variable.get("local_data_dir")
 
 default_args = {
     "owner": "artem_ustsov",
-    "retries": 1,
-    "retry_delay": timedelta(minutes=5),
+    "retries": 3,
+    "retry_delay": timedelta(minutes=1),
 }
 
 
