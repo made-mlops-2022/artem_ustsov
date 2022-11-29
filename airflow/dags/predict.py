@@ -17,7 +17,7 @@ with DAG(
     "predict",
     default_args=default_args,
     schedule_interval="@daily",
-    start_date=datetime(2022, 11, 29),
+    start_date=datetime(2022, 11, 25),
 ) as dag:
     wait_data = PythonSensor(
         task_id="wait-for-predict-data",

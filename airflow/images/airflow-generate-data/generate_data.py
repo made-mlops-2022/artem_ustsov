@@ -48,7 +48,6 @@ def generate_synthetic_data(synthetic_data: str) -> None:
         "thalassemia": True,
     }
 
-
     describer = DataDescriber(category_threshold=5)
     describer.describe_dataset_in_correlated_attribute_mode(
         dataset_file=input_data,
@@ -61,7 +60,7 @@ def generate_synthetic_data(synthetic_data: str) -> None:
     generator = DataGenerator()
 
     # Number of tuples generated in synthetic dataset.
-    num_tuples_to_generate = 300
+    num_tuples_to_generate = 200
     generator.generate_dataset_in_correlated_attribute_mode(
         num_tuples_to_generate, description_file
     )
